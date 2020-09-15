@@ -1,0 +1,55 @@
+*
+{
+  margin: 0;
+}
+
+body{
+  background-color: #f5f6fa;
+}
+
+.app_dropdown {
+  background-color: white;
+}
+.app_header{
+  /* By default disply flex pushes everything to row.
+   * Used to structure purpose. 
+  */
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.app_header > h1 {
+  color: #fc3c3c;
+  font-size: 2rem;
+}
+
+.app_left {
+  flex: 0.9;
+}
+/* Make all the cards on the same row.*/
+.app_stats{
+  display: flex;
+  justify-content: space-between;
+}
+/* Making left and right container vertically aligned.*/
+.app {
+display:flex;
+justify-content: space-evenly;
+padding: 20px;
+}
+
+/* When window gets smaller right side needs to slide down.*/
+@media (max-width: 990px){
+  flex-direction: column;
+}
+
+.app_right {
+  display: flex;
+  flex-direction: column;
+}
+
+.app_graphTitle {
+  margin-top: 20px;
+}
